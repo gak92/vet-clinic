@@ -1,31 +1,34 @@
-# curriculum-databases-projects-template
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+# Database Project - Vet Clinic
 
+> In this porject, I worked with relational database system PostgreSQL to build database for the Vet Clinic. Here, I will create different tables like animals, owners etc.
+
+## Built With
+
+- PostgreSQL
+- SQL
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+Create a repo then clone it and open into Visual Studio Code
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+### Setup
 
+- Download and install Visual Studio, PostgreSQL
+- Command line / Git bash
+
+### Install
+
+- Visual Studio Code
+- PostgreSQL
 
 ## Authors
 
-👤 **Author1**
+👤 **Ghazanfar Ali**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@gak92](https://github.com/gak92)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ghazanfar-ali-9a4998a/)
 
 ## 🤝 Contributing
 
@@ -36,12 +39,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
