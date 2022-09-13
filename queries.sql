@@ -48,4 +48,7 @@ UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
 SELECT * FROM animals;
 COMMIT;
 
-
+SELECT COUNT(*) FROM animals;
+SELECT COUNT(escape_attempts) FROM animals WHERE escape_attempts = 0;
+SELECT AVG(weight_kg) FROM animals;
+SELECT neutered, COUNT(escape_attempts) AS escape_count FROM animals GROUP BY neutered;
