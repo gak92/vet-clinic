@@ -1,5 +1,7 @@
 /* Database schema to keep the structure of entire database. */
 
+-- Project 01
+
 CREATE TABLE animals (
     id INT GENERATED ALWAYS AS IDENTITY,
     name varchar(100),
@@ -9,3 +11,7 @@ CREATE TABLE animals (
     weight_kg DECIMAL,
     PRIMARY KEY(id)
 );
+
+-- Project 02
+
+ALTER TABLE animals ADD species varchar(100); 
