@@ -40,5 +40,8 @@ VALUES ('Sam Smith', 34),
 INSERT INTO species(name) VALUES('Pokemon'), ('Digimon');
 
 -- Update data in animals by modifying specied_id
--- UPDATE animals SET specied_id = (SELECT id FROM species WHERE )
+UPDATE animals SET species_id = (SELECT id FROM species WHERE name='Digimon') WHERE name LIKE '%mon';
+UPDATE animals SET species_id = (SELECT id FROM species WHERE name='Pokemon') WHERE species_id IS NULL;
+
+
 
