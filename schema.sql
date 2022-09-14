@@ -17,7 +17,7 @@ CREATE TABLE animals (
 ALTER TABLE animals ADD species varchar(100);
 
 -- Project 03
-
+-- Create new tables
 CREATE TABLE owners (
     id INT GENERATED ALWAYS AS IDENTITY,
     full_name varchar(250),
@@ -31,6 +31,7 @@ CREATE TABLE species (
     PRIMARY KEY(id)
 );
 
+-- Alter animals table to add species_id as foreign key
 ALTER TABLE animals DROP COLUMN species;
 
 ALTER TABLE animals ADD species_id INT;
@@ -39,3 +40,11 @@ ALTER TABLE animals
 ADD CONSTRAINT fk_animal_species
 FOREIGN KEY (species_id)
 REFERENCES species(id);
+
+-- Alter animals table to add owner_id as foreign key
+ALTER TABLE animals ADD owner_id INT;
+
+ALTER TABLE animals
+ADD CONSTRAINT fk_animal_owner
+FOREIGN KEY (owner_id)
+REFERENCES owners(id);
