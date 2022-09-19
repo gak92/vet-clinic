@@ -83,3 +83,6 @@ CREATE TABLE visits (
 
 -- Add an email column to your owners table
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+
+-- CREATE INDEX for the tables
