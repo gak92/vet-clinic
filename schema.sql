@@ -86,3 +86,13 @@ ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 
 -- CREATE INDEX for the tables
+-- SELECT COUNT(*) FROM visits where animal_id = 4;
+CREATE INDEX animal_id_index ON visits(animal_id);
+
+--  SELECT * FROM visits where vet_id = 2;
+
+
+--  SELECT * FROM owners where email = 'owner_18327@mail.com';
+
+
+
