@@ -79,3 +79,20 @@ CREATE TABLE visits (
 
 -- ALTER TABLE visits
 -- DROP CONSTRAINT visits_pkey;
+
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+
+-- CREATE INDEX for the tables
+-- SELECT COUNT(*) FROM visits where animal_id = 4;
+CREATE INDEX animal_id_index ON visits(animal_id);
+
+--  SELECT * FROM visits where vet_id = 2;
+CREATE INDEX vet_id_index ON visits(vet_id);
+
+--  SELECT * FROM owners where email = 'owner_18327@mail.com';
+CREATE INDEX email_index ON owners(email);
+
+
