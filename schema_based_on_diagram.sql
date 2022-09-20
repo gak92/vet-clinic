@@ -42,4 +42,12 @@ CREATE TABLE invoice_items (
   treatment_id INT
 );
 
+--create table treatments
+CREATE TABLE treatments (
+  id INT GENERATED ALWAYS AS IDENTITY,
+  PRIMARY KEY(id),
+  type VARCHAR(250),
+  name VARCHAR(250)
+);
+
 
