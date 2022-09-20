@@ -39,7 +39,8 @@ CREATE TABLE invoice_items (
   total_price DECIMAL,
   invoice_id INT,
   CONSTRAINT fk_invoice_id FOREIGN KEY invoice_id REFERENCES invoices(id),
-  treatment_id INT
+  treatment_id INT,
+  CONSTRAINT fk_treatment_id FOREIGN KEY treatment_id REFERENCES treatments(id)
 );
 
 --create table treatments
@@ -50,4 +51,19 @@ CREATE TABLE treatments (
   name VARCHAR(250)
 );
 
+-- Create JOIN table for medical_histories and treatments
+CREATE TABLE history_treatment (
+  history_id INT,
+  treatment_id INT,
+  CONSTRAINT fk_history_id FOREIGN KEY history_id REFERENCES medical_histories(id),
+  CONSTRAINT fk_treatment_id FOREIGN KEY treatment_id REFERENCES treatments(id)
+);
 
+-- Create INDEX for the foreign keys
+CREATE INDEX patient_id_index ON medical_histories(patient_id);
+
+CREATE INDEX medical_history__id_index ON invoices(medical_history__id);
+
+CREATE INDEX invoice_id_index ON invoice_items(invoice_id);
+
+CREATE INDEX treatment_id_index ON invoice_items(treatment_id);
