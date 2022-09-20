@@ -19,7 +19,7 @@ CREATE TABLE medical_histories (
   CONSTRAINT fk_patient_id FOREIGN KEY patient_id REFERENCES patients(id)
 );
 
---creat table invoices
+--create table invoices
 CREATE TABLE invoices (
   id INT GENERATED ALWAYS AS IDENTITY,
   PRIMARY KEY(id),
@@ -29,4 +29,17 @@ CREATE TABLE invoices (
   medical_history__id INT,
   CONSTRAINT fk_medical_history_id FOREIGN KEY medical_history__id REFERENCES medical_histories(id)
 );
+
+--create table invoice_items
+CREATE TABLE invoice_items (
+  id INT GENERATED ALWAYS AS IDENTITY,
+  PRIMARY KEY(id),
+  unit_price DECIMAL,
+  quantity INT,
+  total_price DECIMAL,
+  invoice_id INT,
+  CONSTRAINT fk_invoice_id FOREIGN KEY invoice_id REFERENCES invoices(id),
+  treatment_id INT
+);
+
 
