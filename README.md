@@ -4,6 +4,10 @@
 
 > In this porject, I worked with relational database system PostgreSQL to build database for the Vet Clinic. Here, I will create different tables like animals, owners etc.
 
+## Schema Diagram
+
+![vet_clinic db diagram](./drawSQL-export-2022-09-20_17_19.png)
+
 ## Built With
 
 - PostgreSQL
