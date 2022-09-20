@@ -34,6 +34,11 @@ Create a repo then clone it and open into Visual Studio Code
 - GitHub: [@gak92](https://github.com/gak92)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ghazanfar-ali-9a4998a/)
 
+👤 **Piesie Yeboah**
+
+- GitHub: [@piesieomane](https://github.com/piesieomane)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/piesieomane/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
